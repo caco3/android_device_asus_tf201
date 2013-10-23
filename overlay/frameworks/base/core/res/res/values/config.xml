@@ -82,6 +82,15 @@
          when the lid is open, 2 means it is accessible when the lid is
          closed.  The default is 0. -->
     <integer name="config_lidKeyboardAccessibility">1</integer>
+    
+    
+    <!-- Add support for Dock battery status indication -->
+    <bool name="config_hasDockBattery">true</bool>
+
+    <string name="config_deviceHandlersLib" translatable="false">/system/framework/com.cyanogenmod.asusdec.jar</string>
+    <string name="config_deviceDockBatteryHandlerClass" translatable="false">com.cyanogenmod.asusdec.DockBatteryHandler</string>
+    <string name="config_deviceKeyHandlerClass" translatable="false">com.cyanogenmod.asusdec.KeyHandler</string>
+    
 
     <!-- Indicate whether closing the lid causes the device to go to sleep and opening
          it causes the device to wake up.
